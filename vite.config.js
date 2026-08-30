@@ -8,6 +8,7 @@ const __dirname = path.dirname(__filename);
 
 export default defineConfig({
    plugins: [react()],
+   base: '/React-cours-/',
 
    resolve: {
       alias: {
@@ -16,6 +17,7 @@ export default defineConfig({
    },
 
    server: {
+      host: '127.0.0.1',   // слушать привычный IPv4-адрес, а не только IPv6
       hmr: {
          overlay: false
       }
