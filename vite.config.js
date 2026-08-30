@@ -18,8 +18,5 @@ export default defineConfig({
 
    server: {
       host: '127.0.0.1',   // слушать привычный IPv4-адрес, а не только IPv6
-      hmr: {
-         overlay: false
-      }
    },
 });
